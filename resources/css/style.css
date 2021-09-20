@@ -1,14 +1,24 @@
 html {
     font-size: 16px;
+    font-family: Helvetica, sans-serif;
     color: #4a4a4a;
+    margin: 0 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 12px 0;
+}
+
+/* Navigation Section */
 nav {
     display: flex;
+    align-items: center;
     max-height: 64px;
     width: 100%;
     position: fixed;
     z-index: 100;
+    background-color: white;
+    top: 0;
 }
 
 #logo {
@@ -46,4 +56,49 @@ nav {
 #navigation a {
     text-decoration: none;
     color: #4a4a4a;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    position: relative;
+    top: 64px;
+    width: 100%;
+    background-color: #d8d8d8;
+}
+
+.image-header {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.image-header img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    margin: auto 0;
+}
+
+.text-header h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+header a {
+    display: block;
+    text-align: center;
+    margin: 12px 0;
+}
+
+a.button {
+    max-width: 100%;
+    text-decoration: none;
+    padding: 8px;
+    color: #d8d8d8;
+    background-color: #4a4a4a;
 }
