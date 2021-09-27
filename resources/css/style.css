@@ -1,4 +1,4 @@
-html {
+html, body {
     font-size: 16px;
     font-family: Helvetica, sans-serif;
     color: #4a4a4a;
@@ -7,6 +7,12 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 12px 0;
+}
+
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color1: #9b9b9b;
+    --secondary-color2: #d8d8d8;
 }
 
 /* Navigation Section */
@@ -67,12 +73,12 @@ header {
     background-color: #d8d8d8;
 }
 
-.image-header {
+.image-container {
     padding: 32px 24px;
     width: 60%;
 }
 
-.image-header img {
+.image-container img {
     max-width: 100%;
     max-height: auto;
 }
@@ -101,4 +107,74 @@ a.button {
     padding: 8px;
     color: #d8d8d8;
     background-color: #4a4a4a;
+}
+
+/* Info Section */
+
+#info-section {
+    position: relative;
+    top: 64px;
+    padding-bottom: 32px;
+    display: flex;
+}
+
+.i-s-left {
+    width: 60%;
+}
+
+.i-s-left .image-container {
+    width: 100%;
+}
+
+.i-s-right {
+    width: 40%;
+}
+
+.i-section {
+    display: flex;
+    border: #d8d8d8 solid 1px;
+}
+
+.i-section img {
+    margin: 16px;
+    width: 35%;
+    height: auto;
+}
+
+.i-s-quote {
+    margin-left: 24px;
+}
+
+.i-s-quote h2 {
+    font-size: 42px;
+}
+
+.i-s-quote h4 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 16px;
+}
+
+.about-title {
+    font-size: 36px;
+    margin: 4px;
+}
+
+.about-info {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 4px;
+}
+
+.about a {
+    margin: 4px;
+    text-decoration: none;
+    font-size: 20px;
 }
